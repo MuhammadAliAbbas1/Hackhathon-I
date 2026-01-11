@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocusaurus_site=globalThis.webpackChunkdocusaurus_site||[]).push([[1903],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/Hackhathon-I/blog","blogTitle":"Blog","authorsListPath":"/Hackhathon-I/blog/authors"}')}}]);
