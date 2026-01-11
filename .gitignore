@@ -42,5 +42,9 @@ env/
 
 # Spec Kit-specific files
 .genreleases/
+
+# Docusaurus
+docusaurus-site/
+build/
 *.zip
 sdd-*/
