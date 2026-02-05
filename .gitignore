@@ -48,3 +48,11 @@ docusaurus-site/
 build/
 *.zip
 sdd-*/
+
+
+# temp / claude
+tmpclaude*
+nul
+
+# env files
+.env
