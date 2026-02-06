@@ -74,8 +74,11 @@ document.addEventListener('mouseup', function(event) {
     return;
   }
 
+  // Store the selected text when selection occurs (before it gets cleared)
+  selectedTextGlobal = selectedText;
+
   // Show/hide button based on selection length
-  if (selectedText.length > 20) {
+  if (selectedTextGlobal.length > 20) {
     // Position the button near the mouse cursor
     askAiButton.style.left = (event.pageX + 10) + 'px';
     askAiButton.style.top = (event.pageY - 40) + 'px';
@@ -87,14 +90,11 @@ document.addEventListener('mouseup', function(event) {
 
 // Click event listener for the Ask AI button
 askAiButton.addEventListener('click', function() {
-  const selection = window.getSelection();
-  const selectedText = selection.toString().trim();
+  // Use the stored selected text (not retrieve it again since browser clears selection on click)
+  // selectedTextGlobal is already set in the mouseup event
 
-  // Store the selected text in global variable
-  selectedTextGlobal = selectedText;
-
-  // Console log the selected text
-  console.log('Selected Text:', selectedText);
+  // Console log the stored selected text
+  console.log('Selected Text:', selectedTextGlobal);
 
   // Hide the button after clicking
   askAiButton.style.display = 'none';
