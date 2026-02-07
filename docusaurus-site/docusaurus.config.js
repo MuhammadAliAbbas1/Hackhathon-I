@@ -74,9 +74,9 @@ const config = {
     ],
   ],
 
-  scripts: [
+  scripts: [  
     {
-      src: '/js/selectedTextChat.js',
+      src: '/Hackhathon-I/js/selectedTextChat.js',
       async: true,
     },
   ],
