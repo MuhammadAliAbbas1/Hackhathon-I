@@ -28,3 +28,19 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Ask AI Panel Styles */
+.ask-ai-panel-overlay {
+  /* Ensure panel doesn't block page scrolling */
+  overflow: visible !important;
+}
+
+.ask-ai-panel {
+  /* Smooth slide animation */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure the main content is not affected by the panel */
+#__docusaurus {
+  overflow: visible !important;
+}

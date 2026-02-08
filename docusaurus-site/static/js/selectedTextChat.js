@@ -67,7 +67,7 @@ askAiButton.addEventListener('mousedown', function(e) {
 });
 
 askAiButton.addEventListener('click', function() {
-  console.log('Selected Text for AI:', selectedTextGlobal);
+  window.dispatchEvent(new CustomEvent("ask-ai-open", { detail: { selectedText: selectedTextGlobal } }));
   askAiButton.style.display = 'none';
   window.getSelection().removeAllRanges();
 });
