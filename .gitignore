@@ -44,7 +44,6 @@ env/
 .genreleases/
 
 # Docusaurus
-docusaurus-site/
 build/
 *.zip
 sdd-*/
